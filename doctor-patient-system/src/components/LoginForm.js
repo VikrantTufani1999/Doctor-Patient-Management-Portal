@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import "../index.css";
+
 const axios = require('axios');
 const qs=require('qs');
 
@@ -69,6 +71,7 @@ function LoginForm() {
 
     return (
 
+        <div className="App">
         <form onSubmit={submitHandler}>
             <div className="form-inner">
                 <h2>Login</h2>
@@ -81,9 +84,11 @@ function LoginForm() {
                     <label htmlFor=""> Password </label>
                     <input type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
                 </div>
-                <input type="submit" value="LOGIN" />
+                <br/>
+                <input class="submit" type="submit" value="LOGIN" />
             </div>
         </form>
+        </div>
     )
 }
 

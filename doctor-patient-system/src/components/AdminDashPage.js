@@ -1,12 +1,16 @@
 import React from "react";
+import { Col, Container } from "react-bootstrap";
 import "../App.css";
+
 import Password from "./adminComponents/changePassword.js"
 import Medicine from "./adminComponents/modifyMedicineDetails.js"
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import ChartsPage from "./ChartsPage";
+
 function AdminDashPage() {
   return (
-    <>
+    <div>
       <div className="Navbar">
         <div className="leftSide">
           <div className="links">
@@ -29,7 +33,10 @@ function AdminDashPage() {
           </div>
         </div>
       </div>
-    </>
+      <div>
+        <ChartsPage />
+      </div>
+    </div>
   );
 }
 

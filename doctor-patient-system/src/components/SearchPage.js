@@ -11,7 +11,11 @@ import CreatePatient from "./appointments/createPatient.js"
 import CreateCheckupDetails from "./checkupDetails/CreateCheckupDetails.js"
 
 import { Button, Row, Col, Container } from "react-bootstrap";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+import ChartsPage from "./ChartsPage";
+import IllnessChart from "./IllnessChart";
+
 
 function SearchPage() {
   return (
@@ -72,6 +76,12 @@ function SearchPage() {
 
       <br />
 
+      <div>
+        <IllnessChart />
+      </div>
+
+      <br/>
+      
       <div className="News">
         <NewsFeed />
       </div>
