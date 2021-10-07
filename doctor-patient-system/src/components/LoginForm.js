@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+const axios = require('axios');
+const qs=require('qs');
 
 function LoginForm() { 
 
@@ -18,33 +20,78 @@ function LoginForm() {
   const [user, setUser] = useState({email: "", password: ""});
   const [error, setError] = useState("");
 
-  const Login = details => {
+  const Login = async (details) => {
     console.log(details);
 
-    if(details.email == docUser.email && details.password == docUser.password)
-    {
-      console.log("Logged in");
-
-      history.push("/Search");
-      setUser({
-        email: details.email
-      })
+    const params = {
+      username : details.email,
+      password : details.password
     }
 
-    else if(details.email == adminUser.email && details.password == adminUser.password)
-    {
-      console.log("Logged in to admin");
+    try {
+          const resp = await axios.post('/checkAuthentication', qs.stringify(params));
+          
+          // let dataObj = JSON.parse(resp);
+          console.log(resp.data.role);
+          console.log(resp.data.status);
 
-      history.push("/AdminDash");
-      setUser({
-        email: details.email
-      })
+          if(resp.data.status == "success"){
+
+            if(resp.data.role == "admin"){
+                console.log("Logged in to admin");
+
+                history.push("/AdminDash");
+                setUser({
+                  email: details.email
+                })
+
+            }
+            else {
+              console.log("Logged in");
+
+              history.push("/Search");
+              setUser({
+                email: details.email
+              })
+            }
+              
+          }
+          else {
+              console.log("Invalid credentials");
+              setError("Invalid credentials");
+          }
+
+
+    } catch (err) {
+        // Handle Error Here
+        console.error(err);
     }
+
+
+    // if(details.email == docUser.email && details.password == docUser.password)
+    // {
+    //   console.log("Logged in");
+
+    //   history.push("/Search");
+    //   setUser({
+    //     email: details.email
+    //   })
+    // }
+
+    // else if(details.email == adminUser.email && details.password == adminUser.password)
+    // {
+    //   console.log("Logged in to admin");
+
+    //   history.push("/AdminDash");
+    //   setUser({
+    //     email: details.email
+    //   })
+    // }
     
-    else {
-      console.log("Invalid credentials");
-      setError("Invalid credentials");
-    }
+    // else {
+    //   console.log("Invalid credentials");
+    //   setError("Invalid credentials");
+    // }
   }
 
 
