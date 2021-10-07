@@ -2,3 +2,32 @@
     font-family: sans-serif;
     text-align: center;
   }
+
+.med2{
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+}
+
+.pass2{
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+}
+
+#goToDash{
+  text-decoration: none;
+  color: white;
+}
+
+.head1{
+  text-align: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* .table1{
+  border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+} */

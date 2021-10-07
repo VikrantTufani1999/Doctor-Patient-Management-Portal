@@ -17,6 +17,7 @@ function Faq() {
 
   return (
     <div className="faq">
+      <h3 class="faqhead">FAQ </h3>
 
       <Accordion defaultActiveKey={activeId}>
 

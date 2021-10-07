@@ -1,12 +1,14 @@
 .faq{
     bottom: 0px;
-    position: absolute;
+    width: 50%;
+    position: relative;
     justify-content: center;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 300px;
 }
 
 .panel-wrap {
+    background: yellow;
     margin-bottom: 15px;
   }
   
@@ -37,4 +39,8 @@
     color: #333333;
     padding: 5px;
     border-top: none;
+  }
+
+  .faqhead{
+      text-align: center;
   }

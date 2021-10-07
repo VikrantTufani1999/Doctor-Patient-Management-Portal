@@ -17,16 +17,6 @@ function AdminDashPage() {
         </div>
       </div>
       <div>
-        {/* <button>
-          <a class="med" href="/UpdateMed">
-            Update Medicines
-          </a>
-        </button>
-        <button>
-          <a class="pass" href="/ChangePass">
-            Change Password
-          </a>
-        </button> */}
         <div class="container p-3 my-3 border">
           <div class="col-md-12 text-center">
             <button type="button" class="btn btn-success btn-lg">

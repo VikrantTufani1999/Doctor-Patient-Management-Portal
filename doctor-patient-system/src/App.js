@@ -10,6 +10,8 @@ import NewsFeed from './components/NewsFeed';
 import Faq from './components/Faq';
 import UpdateRemoveMed from './components/UpdateRemoveMed';
 import ChangePass from './components/ChangePass';
+import RegisterPatient from './components/RegisterPatient';
+import DeleteApp from './components/DeleteApp';
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/Faq" component={Faq} /> */}
         <Route path="/UpdateMed" component={UpdateRemoveMed} />
         <Route path="/ChangePass" component={ChangePass} />
+        <Route path="/RegPatient" component={RegisterPatient} />
+        <Route path="/DelApp" component={DeleteApp} />
       </Switch>
     </Router>
   
