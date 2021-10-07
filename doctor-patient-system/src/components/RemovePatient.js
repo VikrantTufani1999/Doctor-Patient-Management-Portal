@@ -6,10 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const AppointmentDetails = () => {
 
-  // const ShowData = (e) => {
-  //   var colValue= this.dataItem($(e.currentTarget).closest("tr"));
-  //   console.log(colValue);
-  // };
+  const ShowData = (e) => {
+    // var colValue= this.dataItem($(e.currentTarget).closest("tr"));
+    // console.log(colValue);
+  };
 
   return (
     <div class="table2">
