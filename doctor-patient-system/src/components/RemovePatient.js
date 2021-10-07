@@ -2,14 +2,14 @@ import React, { useState, useRef } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
+// import $ from "jquery";
 
 const AppointmentDetails = () => {
 
-  const ShowData = (e) => {
-    var colValue= this.dataItem($(e.currentTarget).closest("tr"));
-    console.log(colValue);
-  };
+  // const ShowData = (e) => {
+  //   var colValue= this.dataItem($(e.currentTarget).closest("tr"));
+  //   console.log(colValue);
+  // };
 
   return (
     <div class="table2">
