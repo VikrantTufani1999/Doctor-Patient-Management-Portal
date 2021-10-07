@@ -97,4 +97,22 @@
         font-size: 20px;
     }    
   }
+
+  .News{
+    margin-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    bottom: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #med{
+    text-decoration: none;
+  }
+
+  #pass{
+    text-decoration: none;
+  }
   

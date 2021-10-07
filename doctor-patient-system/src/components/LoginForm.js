@@ -5,8 +5,13 @@ function LoginForm() {
 
   let history = useHistory();
 
-  const adminUser = {
+  const docUser = {
     email: "admin@admin.com",
+    password: "admin123"
+  }
+
+  const adminUser = {
+    email: "admin1@admin.com",
     password: "admin123"
   }
 
@@ -16,7 +21,7 @@ function LoginForm() {
   const Login = details => {
     console.log(details);
 
-    if(details.email == adminUser.email && details.password == adminUser.password)
+    if(details.email == docUser.email && details.password == docUser.password)
     {
       console.log("Logged in");
 
@@ -25,11 +30,24 @@ function LoginForm() {
         email: details.email
       })
     }
+
+    else if(details.email == adminUser.email && details.password == adminUser.password)
+    {
+      console.log("Logged in to admin");
+
+      history.push("/AdminDash");
+      setUser({
+        email: details.email
+      })
+    }
+    
     else {
       console.log("Invalid credentials");
       setError("Invalid credentials");
     }
   }
+
+
 
 
 
@@ -61,4 +79,4 @@ function LoginForm() {
     )
 }
 
-export default LoginForm; 
+export default LoginForm 

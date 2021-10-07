@@ -3,45 +3,27 @@ import { useState } from 'react';
 import LoginForm from './components/LoginForm';
 import SearchPage from './components/SearchPage';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect, useHistory, BrowserRouter } from "react-router-dom";
+import AdminDashPage from './components/AdminDashPage';
+import AdminLoginForm from './components/AdminLoginForm';
+import NewsFeed from './components/NewsFeed';
+import Faq from './components/Faq';
+import UpdateRemoveMed from './components/UpdateRemoveMed';
+import ChangePass from './components/ChangePass';
 
 function App() {
-
-  const adminUser = {
-    email: "admin@admin.com",
-    password: "admin123"
-  }
-
-  const [user, setUser] = useState({email: "", password: ""});
-  const [error, setError] = useState("");
-
-  const Login = details => {
-    console.log(details);
-
-    if(details.email == adminUser.email && details.password == adminUser.password)
-    {
-      console.log("Logged in");
-      setUser({
-        email: details.email
-      })
-    }
-    else {
-      console.log("Invalid credentials");
-      setError("Invalid credentials");
-    }
-  }
-
-  const Logout = () => {
-    console.log("Logout");
-    setUser({ email: ""})
-  }
-  
 
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={LoginForm} />
         <Route path="/Search" component={SearchPage} />
+        {/* <Route path="/AdminLogin" component={AdminLoginForm} /> */}
+        <Route path="/AdminDash" component={AdminDashPage} />
+        {/* <Route path="/NewsFeed" component={NewsFeed} />
+        <Route path="/Faq" component={Faq} /> */}
+        <Route path="/UpdateMed" component={UpdateRemoveMed} />
+        <Route path="/ChangePass" component={ChangePass} />
       </Switch>
     </Router>
   
