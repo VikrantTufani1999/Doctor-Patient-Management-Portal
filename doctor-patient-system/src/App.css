@@ -100,8 +100,8 @@
 
   .News{
     margin-bottom: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 0%;
+    margin-right: 0%;
     bottom: 0;
     position: relative;
     justify-content: center;
@@ -115,4 +115,15 @@
   #pass{
     text-decoration: none;
   }
+
+  .register{
+    margin-top: 30px;
+  }
+
+  .delete{
+    margin-top: 30px;
+  }
   
+  #but3{
+    text-decoration: none;
+  }

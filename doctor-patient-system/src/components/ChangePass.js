@@ -63,9 +63,18 @@ const Appointment = () => {
   // Render
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Change Password
-      </Button>
+      <div class="pass2">
+        <Button variant="primary" onClick={handleShow}>
+          To Change the Password
+        </Button>
+        <br />
+        <br />
+        <Button variant="success">
+          <a id="goToDash" href="/AdminDash">
+            Go to Admin Dashboard
+          </a>
+        </Button>
+      </div>
 
       <Modal show={show} onHide={handleClose}>
         {/* Header */}

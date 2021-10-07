@@ -3,22 +3,13 @@ import { useHistory } from 'react-router-dom'
 const axios = require('axios');
 const qs=require('qs');
 
-function LoginForm() { 
 
+function LoginForm() {
   let history = useHistory();
 
-  const docUser = {
-    email: "admin@admin.com",
-    password: "admin123"
-  }
-
-  const adminUser = {
-    email: "admin1@admin.com",
-    password: "admin123"
-  }
-
-  const [user, setUser] = useState({email: "", password: ""});
+  const [user, setUser] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+
 
   const Login = async (details) => {
     console.log(details);
@@ -66,37 +57,7 @@ function LoginForm() {
         // Handle Error Here
         console.error(err);
     }
-
-
-    // if(details.email == docUser.email && details.password == docUser.password)
-    // {
-    //   console.log("Logged in");
-
-    //   history.push("/Search");
-    //   setUser({
-    //     email: details.email
-    //   })
-    // }
-
-    // else if(details.email == adminUser.email && details.password == adminUser.password)
-    // {
-    //   console.log("Logged in to admin");
-
-    //   history.push("/AdminDash");
-    //   setUser({
-    //     email: details.email
-    //   })
-    // }
-    
-    // else {
-    //   console.log("Invalid credentials");
-    //   setError("Invalid credentials");
-    // }
   }
-
-
-
-
 
 
     const [details, setDetails] = useState({email: "", password: ""});
@@ -126,4 +87,4 @@ function LoginForm() {
     )
 }
 
-export default LoginForm 
+export default LoginForm;
