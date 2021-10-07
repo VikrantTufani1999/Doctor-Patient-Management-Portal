@@ -37,7 +37,7 @@ export default function CriticalTable() {
       <br />
       <h3 class="head1">CRITICAL PATIENTS RECORD</h3>
       <div class="table1">
-        <Table striped bordered hover variant="dark">
+        <Table striped bordered hover variant="primary">
           <thead>
             <tr>
               <th>Patient_id</th>

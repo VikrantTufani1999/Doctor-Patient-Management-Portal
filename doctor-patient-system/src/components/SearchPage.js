@@ -24,13 +24,13 @@ function SearchPage() {
         <div className="leftSide">
           <div className="links">
             <a href="/Search">Home</a>
-            {/* <a href="/AdminLogin">Admin Login</a> */}
-            <a href="/">Logout</a>
+            
           </div>
         </div>
         <div className="rightSide">
-          <input type="text" placeholder="Search..." />
-          <button>Search</button>
+        <a href="/">Logout</a>
+          {/* <input type="text" placeholder="Search..." />
+          <button>Search</button> */}
         </div>
       </div>
 
@@ -81,7 +81,7 @@ function SearchPage() {
       </div>
 
       <br/>
-      
+
       <div className="News">
         <NewsFeed />
       </div>

@@ -1,14 +1,15 @@
 .faq{
+  font-family: 'Brush Script MT', cursive;
     bottom: 0px;
-    width: 50%;
+    width: 100%;
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-left: 300px;
+    margin-left: 0px;
 }
 
 .panel-wrap {
-    background: yellow;
+    background: rgb(110, 197, 122);
     margin-bottom: 15px;
   }
   
