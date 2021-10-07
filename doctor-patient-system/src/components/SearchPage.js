@@ -3,7 +3,15 @@ import "../App.css";
 import NewsFeed from "./NewsFeed";
 import Faq from "./Faq";
 import CriticalTable from "./CriticalTable";
+import DeleteApp from "./DeleteApp";
+import Appointment from "./appointments/ShowAppointments.js"
+import CreateAppointment from "./appointments/createAppointment.js"
+import DeleteAppointment from "./appointments/deleteAppointment.js"
+import CreatePatient from "./appointments/createPatient.js"
+import CreateCheckupDetails from "./checkupDetails/CreateCheckupDetails.js"
+
 import { Button, Row, Col, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function SearchPage() {
   return (
@@ -25,37 +33,29 @@ function SearchPage() {
       <Container>
         <Row>
           <Col>
-            <div class="register">
-              <Button variant="success">
-                <a id="but3" class="text-white" href="/RegPatient">
-                  Register Patient
-                </a>
-              </Button>
+            <div class="delete">
+              <CreatePatient />
             </div>
           </Col>
           <Col>
             <div class="delete">
-              <Button variant="success">
-                <a id="but3" class="text-white" href="/DelApp">
-                  Delete Appointment
-                </a>
-              </Button>
+              <Appointment />
             </div>
           </Col>
           <Col>
             <div class="delete">
-              <Button variant="success">Add Appointment</Button>
+              <CreateAppointment />
             </div>
           </Col>
           <Col>
             <div class="delete">
-              <Button variant="success">Dummy Button </Button>
+              <DeleteAppointment />
             </div>
           </Col>
 
           <Col>
             <div class="delete">
-              <Button variant="success">Dummy Button2 </Button>
+              <CreateCheckupDetails />
             </div>
           </Col>
         </Row>
