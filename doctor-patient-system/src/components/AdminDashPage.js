@@ -1,5 +1,8 @@
 import React from "react";
 import "../App.css";
+import Password from "./adminComponents/changePassword.js"
+import Medicine from "./adminComponents/modifyMedicineDetails.js"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function AdminDashPage() {
   return (
@@ -19,18 +22,10 @@ function AdminDashPage() {
       <div>
         <div class="container p-3 my-3 border">
           <div class="col-md-12 text-center">
-            <button type="button" class="btn btn-success btn-lg">
-              <a id="med" class="text-white" href="/UpdateMed">
-                Update Medicines
-              </a>
-            </button>
+            <Medicine />
             <br />
             <br />
-            <button type="button" class="btn btn-success btn-lg">
-              <a id="pass" class="text-white" href="/ChangePass">
-                Change Password
-              </a>
-            </button>
+            <Password />
           </div>
         </div>
       </div>
