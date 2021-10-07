@@ -4,6 +4,8 @@ import NewsFeed from "./NewsFeed";
 import Faq from "./Faq";
 import CriticalTable from "./CriticalTable";
 import { Button, Row, Col, Container } from "react-bootstrap";
+import ChartsPage from "./ChartsPage";
+import IllnessChart from "./IllnessChart";
 
 function SearchPage() {
   return (
@@ -72,6 +74,12 @@ function SearchPage() {
 
       <br />
 
+      <div>
+        <IllnessChart />
+      </div>
+
+      <br/>
+      
       <div className="News">
         <NewsFeed />
       </div>

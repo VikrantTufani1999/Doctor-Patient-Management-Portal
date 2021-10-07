@@ -12,6 +12,8 @@ import UpdateRemoveMed from './components/UpdateRemoveMed';
 import ChangePass from './components/ChangePass';
 import RegisterPatient from './components/RegisterPatient';
 import DeleteApp from './components/DeleteApp';
+import RemovePatient from './components/RemovePatient';
+import ChartsPage from './components/ChartsPage';
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
         <Route path="/ChangePass" component={ChangePass} />
         <Route path="/RegPatient" component={RegisterPatient} />
         <Route path="/DelApp" component={DeleteApp} />
+        <Route path="/RemPatient" component={RemovePatient} />
+        <Route path="/ShowChart" component={ChartsPage} />
       </Switch>
     </Router>
   

@@ -1,9 +1,11 @@
 import React from "react";
+import { Col, Container } from "react-bootstrap";
 import "../App.css";
+import ChartsPage from "./ChartsPage";
 
 function AdminDashPage() {
   return (
-    <>
+    <div>
       <div className="Navbar">
         <div className="leftSide">
           <div className="links">
@@ -31,10 +33,28 @@ function AdminDashPage() {
                 Change Password
               </a>
             </button>
+            <br />
+            <br />
+            <button type="button" class="btn btn-success btn-lg">
+              <a id="pass" class="text-white" href="/RemPatient">
+                Remove Patient
+              </a>
+            </button>
+            <br />
+            <br />
+            {/* <button type="button" class="btn btn-success btn-lg">
+              <a id="pass" class="text-white" href="/ShowChart">
+                Show Charts
+              </a>
+            </button> */}
           </div>
         </div>
       </div>
-    </>
+
+      <div>
+        <ChartsPage />
+      </div>
+    </div>
   );
 }
 
