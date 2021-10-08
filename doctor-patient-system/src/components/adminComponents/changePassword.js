@@ -97,7 +97,7 @@ const ChangePassword = (props) => {
         required
       ></input>
 
-      <br></br>
+      <br/><br/>
       <button value="Submit" onClick={onSubmit}>Submit</button>
     </form>
   );

@@ -81,6 +81,13 @@
       color: black;
   }
 
+  .Navbar .rightSide a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
   button:hover{
       cursor: pointer;
   }
@@ -100,8 +107,8 @@
 
   .News{
     margin-bottom: 15px;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
     bottom: 0;
     position: relative;
     justify-content: center;

@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 form{
@@ -59,8 +60,11 @@ form .form-inner .form-group input{
 }
 
 body {
-  background: #1C8EF9 !important;
-  /* background-image: "https://image.freepik.com/free-vector/hand-drawn-minimal-background_23-2149017896.jpg"; */
+  /* background: #1C8EF9 !important; */
+  background-image: url("https://images.unsplash.com/photo-1521729839347-131a32f9abcb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1497&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -138,3 +142,7 @@ body, html, .App, #root, .auth-wrapper {
   color: #167bff;
 }
 
+.title{
+  text-align: center;
+  margin-bottom: 70px;
+}

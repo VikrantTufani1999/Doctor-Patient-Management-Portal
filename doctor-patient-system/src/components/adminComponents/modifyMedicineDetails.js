@@ -81,10 +81,10 @@ const UpdateMedicine = (props) => {
       <div>
       <input type="radio" id="add" name="operation" value="ADD" onClick= {()=>{document.getElementById("add1").hidden=false;
     document.getElementById("rem1").hidden=true}} />
-<label for="add">ADD</label><br/>
+<label for="add"> ADD </label><br/>
 <input type="radio" id="rem" name="operation" value="REMOVE" onClick= {()=>{document.getElementById("add1").hidden=true;
     document.getElementById("rem1").hidden=false}}/>
-<label for="rem">REMOVE</label>
+<label for="rem"> REMOVE </label>
 <br/>
         </div>
       <div id="add1" hidden="true">
