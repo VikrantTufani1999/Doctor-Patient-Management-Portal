@@ -18,6 +18,7 @@ const AppointmentDetails = (props) => {
         "apt_id": event.target.appointment.value
     };
 
+
     try {
         const resp = await axios.post('/deleteAppointment', qs.stringify(params));
         
