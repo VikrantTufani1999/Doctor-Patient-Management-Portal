@@ -8,6 +8,9 @@ import Appointment from "./appointments/ShowAppointments.js"
 import CreateAppointment from "./appointments/createAppointment.js"
 import DeleteAppointment from "./appointments/deleteAppointment.js"
 import CreatePatient from "./appointments/createPatient.js"
+import PatientDetails from "./appointments/PatientDetails.js"
+
+
 import CreateCheckupDetails from "./checkupDetails/CreateCheckupDetails.js"
 
 import { Button, Row, Col, Container } from "react-bootstrap";
@@ -60,6 +63,11 @@ function SearchPage() {
           <Col>
             <div class="delete">
               <CreateCheckupDetails />
+            </div>
+          </Col>
+          <Col>
+            <div class="delete">
+              <PatientDetails />
             </div>
           </Col>
         </Row>
