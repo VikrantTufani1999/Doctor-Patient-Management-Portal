@@ -4,6 +4,7 @@ import "../App.css";
 
 import Password from "./adminComponents/changePassword.js"
 import Medicine from "./adminComponents/modifyMedicineDetails.js"
+import DeletePatient from "./adminComponents/deletePatient.js"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ChartsPage from "./ChartsPage";
@@ -30,6 +31,9 @@ function AdminDashPage() {
             <br />
             <br />
             <Password />
+            <br />
+            <br />
+            <DeletePatient />
           </div>
         </div>
       </div>
