@@ -34,7 +34,7 @@ function CreateCheckupDetails() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" size="lg" onClick={handleShow}>
         Add Check Up Details
       </Button>
 

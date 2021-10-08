@@ -77,7 +77,7 @@ const DeleteAppointment = () => {
   // Render
   return (
     <>
-      <Button variant="danger" onClick={handleShow}>
+      <Button variant="primary" size="lg" onClick={handleShow}>
         Delete Appointment
       </Button>
 

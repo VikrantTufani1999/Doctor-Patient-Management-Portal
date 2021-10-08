@@ -115,7 +115,7 @@ const Password = () => {
   // Render
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" size="lg" onClick={handleShow}>
         Change Password
       </Button>
 

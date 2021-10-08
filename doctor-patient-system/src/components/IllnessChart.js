@@ -59,7 +59,9 @@ function IllnessChart() {
             min: 0
           }    
         }]
-      }
+      },
+      responsive: true,
+      maintainAspectRatio: true,
     };
 
     return (
@@ -93,8 +95,6 @@ function IllnessChart() {
                 },
               ],
             }}
-            width={300}
-            height={400}
             options={options}
           />
         </div>

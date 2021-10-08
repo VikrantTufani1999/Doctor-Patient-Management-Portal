@@ -182,7 +182,7 @@ const Medicine = () => {
   // Render
   return (
     <>
-      <Button variant="primary" onClick={showModal}>
+      <Button variant="primary" size="lg" onClick={showModal}>
         Update or Remove Medicine
       </Button>
 

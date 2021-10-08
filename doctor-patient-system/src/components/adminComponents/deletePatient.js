@@ -77,7 +77,7 @@ const DeletePatient = () => {
   // Render
   return (
     <>
-      <Button variant="danger" onClick={handleShow}>
+      <Button variant="danger" size="lg"  onClick={handleShow}>
         Delete Patient Details
       </Button>
 

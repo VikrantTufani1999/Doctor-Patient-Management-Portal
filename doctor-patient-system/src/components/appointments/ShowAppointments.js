@@ -78,7 +78,7 @@ const Appointment = () => {
   // Render
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" size="lg" onClick={handleShow}>
         Show Appointments
       </Button>
 

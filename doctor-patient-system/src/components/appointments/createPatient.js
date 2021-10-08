@@ -61,7 +61,7 @@ const CreatePatient = () => {
   // Render
   return (
     <>
-      <Button variant="danger" onClick={handleShow}>
+      <Button variant="primary" size="lg" onClick={handleShow}>
         Create New Patient
       </Button>
 

@@ -108,7 +108,7 @@ const CreateAppointment = () => {
   // Render
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" size="lg" onClick={handleShow}>
         Add Appointments
       </Button>
 

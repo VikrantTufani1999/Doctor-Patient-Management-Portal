@@ -116,7 +116,7 @@ let setData=props.setData;
   );
 };
 
-const PatientMain = () => {
+const PatientDetails = () => {
 
 const [show, setShow] = useState(false);
 const [data, setData] = useState([]);
@@ -143,8 +143,8 @@ const handleShow = async () => {
   // Render
   return (
     <>
-    <Button variant="danger" onClick={handleShow}>
-       Patient Details
+    <Button variant="primary" size="lg" onClick={handleShow}>
+       Patient's Details
       </Button>
 
       <Modal show={show} onHide={handleClose} class="modal-dialog modal-lg">
@@ -163,14 +163,16 @@ const handleShow = async () => {
   );
 };
 
-export default function PatientDetails(){
+export default PatientDetails;
+
+// export default function PatientDetails(){
   
-  return (
-    <div className="PatientDetails">
-      <h1></h1>
-      <br />
-      <PatientMain />
+//   return (
+//     <div className="PatientDetails">
+//       <h1></h1>
+//       <br />
+//       <PatientMain />
       
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
