@@ -70,7 +70,9 @@ function LoginForm() {
     }
 
     return (
-
+        <div>
+          <br/>
+        <div><h1 class="title">Doctor Patient Diagnosis System</h1></div>
         <div className="App">
         <form onSubmit={submitHandler}>
             <div className="form-inner">
@@ -88,6 +90,7 @@ function LoginForm() {
                 <input class="submit" type="submit" value="LOGIN" />
             </div>
         </form>
+        </div>
         </div>
     )
 }
